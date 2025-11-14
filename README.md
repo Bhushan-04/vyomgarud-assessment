@@ -36,3 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Open [https://vyomgarud-assessment.vercel.app/](https://vyomgarud-assessment.vercel.app/) to see demo
 
+## wireframing
+
+[https://excalidraw.com/#json=1Cd0skNIV7vYRrJjigoGa,3uNuzADdko37wlA77hXHSQ](https://excalidraw.com/#json=1Cd0skNIV7vYRrJjigoGa,3uNuzADdko37wlA77hXHSQ)
+
