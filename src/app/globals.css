@@ -1,26 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap');
+
 @import "tailwindcss";
 
+/* Base */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --bg: #0f1113;
+    --panel: #0f1113;
+    --muted: #9aa3ad;
+    --accent: #ff7b00;
+    --glass: rgba(255, 255, 255, 0.03);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body,
+#__next {
+    height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(255, 123, 0, 0.02), transparent 6%),
+        radial-gradient(700px 400px at 90% 90%, rgba(255, 123, 0, 0.01), transparent 6%),
+        linear-gradient(180deg, #030405 0%, var(--bg) 100%);
+    color: #e6eef3;
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Particles CSS */
+.particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    background-color: #ff7b00;
+    filter: blur(1px);
+    animation: float 12s linear infinite;
+    will-change: transform, opacity;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0)
+    }
+
+    50% {
+        transform: translateY(-40vh)
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* small helpers */
+.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.bg-panel {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+}
+
+.glint {
+    position: relative;
+    overflow: hidden;
+}
+
+.glint::after {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: -30%;
+    width: 40%;
+    height: 220%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(25deg);
+    opacity: 0;
+    transition: opacity .45s ease, transform .6s ease;
+}
+
+.glint:hover::after {
+    opacity: 1;
+    transform: translateX(110%);
 }
