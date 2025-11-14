@@ -125,7 +125,7 @@ export default function Hero(): JSX.Element {
   />
 
   {/* FIXED BOTTOM-RIGHT CONTAINER */}
-  <div className="absolute md:hidden right-0 flex flex-col pointer-events-none">
+  <div className="absolute bottom-0 flex flex-col pointer-events-none">
 
 
     {/* LOTTIE PLAYER BELOW OR OVER THE SVG */}
