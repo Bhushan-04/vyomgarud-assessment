@@ -38,5 +38,5 @@ Open [https://vyomgarud-assessment.vercel.app/](https://vyomgarud-assessment.ver
 
 ## wireframing
 
-[https://excalidraw.com/#json=1Cd0skNIV7vYRrJjigoGa,3uNuzADdko37wlA77hXHSQ](https://excalidraw.com/#json=1Cd0skNIV7vYRrJjigoGa,3uNuzADdko37wlA77hXHSQ)
+[https://excalidraw.com/#json=lxUgIzZrTmlODwRR0i_H2,FlZH_VSyb4mpJDxT8h4fdw](https://excalidraw.com/#json=lxUgIzZrTmlODwRR0i_H2,FlZH_VSyb4mpJDxT8h4fdw)
 
